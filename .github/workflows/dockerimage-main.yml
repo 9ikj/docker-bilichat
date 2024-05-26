@@ -1,0 +1,27 @@
+name: Build For Release
+
+on:
+  workflow_dispatch: 
+  push:
+    branches:
+      - main
+
+jobs:
+  docker-bilichat:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 'main'
+
+      - name: Build the Docker image
+        env:
+          HUB_NAME: ${{ secrets.DOCKER_NAME }}
+          HUB_KEY: ${{ secrets.DOCKER_TOKEN }}
+        run: |
+          docker login -u $HUB_NAME -p $HUB_KEY
+          docker build . --pull --no-cache --tag docker-bilichat:latest
+
+          docker push $HUB_NAME/docker-bilichat:latest
+    
