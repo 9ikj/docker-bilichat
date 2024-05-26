@@ -1,6 +1,7 @@
 FROM python:3.11-slim-bullseye
 
 LABEL org.opencontainers.image.authors="admin@9ikj.cn"
+LABEL org.opencontainers.image.source="https://github.com/9ikj/docker-bilichat"
 
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
