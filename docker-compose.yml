@@ -4,7 +4,7 @@ services:
     container_name: bilichat
     ports:
       - "8081:8080"
-    image: 9ikj/bilichat:latest
+    image: 9ikj/docker-bilichat:latest
     volumes:
       - ./.env.prod:/opt/bilichat/.env.prod
       - ./nonebot_plugin_bilichat:/root/.local/share/nonebot2/nonebot_plugin_bilichat
