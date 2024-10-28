@@ -1,1 +1,1 @@
-nonebot-plugin-bilichat == 5.13.2
+nonebot-plugin-bilichat == 5.13.3
