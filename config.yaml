@@ -1,0 +1,66 @@
+analyze:
+    cd_time: 120
+    column: true
+    dynamic: true
+    video: true
+api:
+    browser_shot_quality: 75
+    local_api_config:
+        api_access_token: ''
+        api_path: bilichatapi
+        api_sub_dynamic_limit: 720/hour
+        api_sub_live_limit: 1800/hour
+        enable: true
+    request_api: []
+nonebot:
+    block: false
+    cmd_add_sub:
+    - 订阅
+    - 关注
+    cmd_at_all:
+    - 全体成员
+    - at全体
+    cmd_check_login:
+    - 查看登录账号
+    cmd_check_sub:
+    - 查看
+    - 查看订阅
+    cmd_checkdynamic:
+    - 查看动态
+    cmd_dynamic:
+    - 动态通知
+    - 动态订阅
+    cmd_fetch:
+    - 获取内容
+    - 解析内容
+    cmd_live:
+    - 直播通知
+    - 直播订阅
+    cmd_login_qrcode:
+    - 扫码登录
+    cmd_logout:
+    - 登出账号
+    cmd_modify_cfg:
+    - 修改配置
+    cmd_remove_sub:
+    - 退订
+    - 取关
+    cmd_reset_sub:
+    - 重置
+    - 重置配置
+    cmd_start: ''
+    command_to_me: false
+    enable_self: false
+    fallback: true
+    only_self: false
+    only_to_me: false
+subs:
+    dynamic_interval: 300
+    live_interval: 60
+    push_delay: 3
+    users: []
+version: 6.2.5
+webui:
+    api_access_token: ''
+    api_path: bilichatwebui
+    enable: true
