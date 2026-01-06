@@ -1,1 +1,1 @@
-nonebot-plugin-bilichat == 6.4.2
+nonebot-plugin-bilichat == 6.5.0
